@@ -1,73 +1,66 @@
-# React + TypeScript + Vite
+# Professional Engineering Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, production-grade engineering portfolio built with Vite, React, TypeScript, and TailwindCSS.  
+This site showcases my engineering identity, project work, writing, and professional background in a clean, fast, and highly maintainable architecture.
 
-Currently, two official plugins are available:
+The portfolio is intentionally minimal, focusing on clarity, performance, and developer experience.  
+It also serves as a foundation for future demo projects that highlight distributed systems, API engineering, and hands-on technical depth.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## License
+MIT License. See the LICENSE.txt file for details.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- **Vite + React + TypeScript** for a fast, modern development experience  
+- **TailwindCSS** for clean, responsive, utility-first styling  
+- **Dark mode** with persistent theme state  
+- **Markdown-driven content** for the Writing section  
+- **Custom routing** with a simple, maintainable component structure  
+- **Responsive layout** optimized for desktop and mobile  
+- **Netlify deployment** with instant rebuilds  
+- **Clean, senior-level UI/UX polish**  
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🧱 Tech Stack
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- **Frontend:** React, TypeScript, Vite  
+- **Styling:** TailwindCSS  
+- **Content:** Markdown + custom loaders  
+- **Deployment:** Netlify  
+- **Tooling:** ESLint, Prettier  
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📁 Project Structure
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+The structure is intentionally simple and scalable, making it easy to add new pages, projects, or content without architectural overhead.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+## 🧭 Purpose
+
+This portfolio is designed to:
+
+- Present my engineering background with clarity and polish  
+- Provide a home for public demo projects  
+- Serve as a foundation for Bootcamp-phase engineering examples  
+- Demonstrate modern frontend engineering practices  
+- Offer a clean, professional destination for recruiters and hiring managers  
+
+---
+
+## 🌐 Live Site
+
+**Live URL:**  
+https://mikeeunderwood.dev
+
+---
+
+## 📦 Running Locally
+
+```bash
+npm install
+npm run dev
