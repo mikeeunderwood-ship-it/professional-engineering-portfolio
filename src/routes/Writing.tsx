@@ -1,3 +1,6 @@
+import Breadcrumb from "../components/Breadcrumb";
+import { WritingSidebar } from "../components/WritingSidebar";
+
 export default function Writing() {
   const posts = [
     {
@@ -28,31 +31,41 @@ export default function Writing() {
   ];
 
   return (
-    <section className="container mx-auto py-20">
-      <h1 className="text-4xl font-bold mb-10">Writing</h1>
+    <section className="bg-white dark:bg-gray-900 py-10 px-6">
+      <div className="container mx-auto max-w-5xl">
+        <Breadcrumb />
 
-      <p className="max-w-3xl text-lg leading-relaxed mb-10 text-gray-700 dark:text-gray-300">
-        Short, focused write-ups on system design, modernization, distributed workflows, and the engineering
-        patterns I use in real-world platforms. These pieces reflect how I think about building reliable,
-        scalable systems as a Principal-level engineer.
-      </p>
+        <h1 className="text-4xl font-bold mb-10">Writing</h1>
 
-      <div className="grid gap-8">
-        {posts.map((post) => (
-          <div
-            key={post.title}
-            className="border border-gray-200 dark:border-gray-700 rounded-lg p-6 shadow-sm"
-          >
-            <h2 className="text-2xl font-semibold mb-2">{post.title}</h2>
-            <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">{post.summary}</p>
-            <a
-              href={post.link}
-              className="text-blue-600 dark:text-blue-400 hover:underline"
+        <p className="max-w-5xl text-lg leading-relaxed mb-10 text-gray-700 dark:text-gray-300">
+          Short, focused write-ups on system design, modernization, distributed workflows, and the engineering
+          patterns I use in real-world platforms. These pieces reflect how I think about building reliable,
+          scalable systems as a Principal-level engineer.
+        </p>
+
+        <div className="grid mb-8">
+          <a href="/writing/glossary" className="text-blue-600 dark:text-blue-400 hover:underline">
+            Glossary of Distributed Systems and Architecture Terms
+          </a>
+        </div>
+
+        <div className="grid gap-8">
+          {posts.map((post) => (
+            <div
+              key={post.title}
+              className="border border-gray-200 dark:border-gray-700 rounded-lg p-6 shadow-sm"
             >
-              Read More
-            </a>
-          </div>
-        ))}
+              <h2 className="text-2xl font-semibold mb-2">{post.title}</h2>
+              <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">{post.summary}</p>
+              <a
+                href={post.link}
+                className="text-blue-600 dark:text-blue-400 hover:underline"
+              >
+                Read More
+              </a>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

@@ -10,21 +10,25 @@ console.log("WritingPost mounted");
 
   if (!post) {
     return (
-      <section className="container mx-auto py-20">
-        <Breadcrumb />
-        <p className="text-gray-700 dark:text-gray-300">Post not found.</p>
+      <section className="bg-white dark:bg-gray-900 py-10 px-6">
+        <div className="container mx-auto max-w-5xl">
+          <Breadcrumb />
+          <p className="text-gray-700 dark:text-gray-300">Post not found.</p>
+        </div>
       </section>
     );
   }
 
   return (
-    <section className="container mx-auto py-20">
-      <Breadcrumb />
+    <section className="bg-white dark:bg-gray-900 py-10 px-6">
+      <div className="container mx-auto max-w-5xl">
+        <Breadcrumb />
 
-      <article
-        className="prose prose-lg dark:prose-invert max-w-3xl"
-        dangerouslySetInnerHTML={{ __html: post.html }}
-      />
+        <article
+          className="prose prose-lg dark:prose-invert max-w-5xl"
+          dangerouslySetInnerHTML={{ __html: post.html }}
+        />
+      </div>
     </section>
   );
 }

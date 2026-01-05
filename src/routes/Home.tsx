@@ -1,7 +1,10 @@
+import Breadcrumb from "../components/Breadcrumb";
+
 export default function Home() {
   return (
     <section className="bg-gradient-to-b bg-white to-gray-50 dark:bg-gray-900 py-5 sm:py-7 lg:py-10 px-6">
       <div className="container mx-auto max-w-5xl">
+        <Breadcrumb />
 
         {/* Headline */}
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 text-gray-900 dark:text-gray-100">

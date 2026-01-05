@@ -1,3 +1,5 @@
+import Breadcrumb from "../components/Breadcrumb";
+
 export default function Projects() {
   const projects = [
     {
@@ -45,6 +47,7 @@ export default function Projects() {
   return (
     <section className="bg-white dark:bg-gray-900 py-10 px-6">
       <div className="container mx-auto max-w-5xl">
+        <Breadcrumb />
 
         {/* Page Title */}
         <h1 className="text-4xl sm:text-5xl font-bold mb-10 text-gray-900 dark:text-gray-100">

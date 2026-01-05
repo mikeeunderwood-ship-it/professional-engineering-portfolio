@@ -11,7 +11,7 @@ export default function Breadcrumb() {
       .replace(/\b\w/g, (c) => c.toUpperCase());
 
   return (
-    <nav className="text-sm text-gray-600 dark:text-gray-400 mb-6">
+    <nav className="text-base text-gray-700 dark:text-gray-300 mb-6">
       <ol className="flex items-center space-x-2">
         <li>
           <Link to="/" className="hover:underline">
