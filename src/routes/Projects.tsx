@@ -6,7 +6,7 @@ export default function Projects() {
       description:
         "A modern, production-grade engineering portfolio built with Vite, React, TypeScript, and TailwindCSS. Includes custom routing, markdown-driven content, dark mode, responsive layout, and a clean component architecture.",
       tech: "Vite, React, TypeScript, TailwindCSS, Netlify",
-      link: "https://YOUR-LIVE-SITE-URL"
+      link: "https://mikeeunderwood.dev"
     },
     {
       title: "SEO Lead Generator",
@@ -14,7 +14,7 @@ export default function Projects() {
       description:
         "A TypeScript-based tool deployed on Netlify for generating SEO-optimized content and leads. Demonstrates modern tooling, DX focus, and clean UI engineering.",
       tech: "TypeScript, Vite, Netlify",
-      link: "https://YOUR-NETLIFY-URL"
+      link: "https://mikeeunderwood-seo-lead-generator.netlify.app/"
     },
     {
       title: "Async & Concurrency Playground",
