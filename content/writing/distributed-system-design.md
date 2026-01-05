@@ -2,7 +2,11 @@
 title: "How I Approach Distributed System Design"
 summary: "The principles, tradeoffs, and mental models I rely on when designing distributed systems at scale."
 date: "2026-01-03"
-tags: ["distributed-systems", "architecture", "system-design", "scalability"]
+tags:
+  - distributed-systems
+  - architecture
+  - system-design
+  - scalability
 ---
 
 # How I Approach Distributed System Design

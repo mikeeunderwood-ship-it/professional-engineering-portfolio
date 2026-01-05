@@ -6,6 +6,8 @@ export default function WritingPost() {
   const { slug } = useParams();
   const post = slug ? getPost(slug) : null;
 
+console.log("WritingPost mounted");
+
   if (!post) {
     return (
       <section className="container mx-auto py-20">
