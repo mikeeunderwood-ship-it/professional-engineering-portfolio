@@ -1,8 +1,8 @@
 import { marked } from "marked";
 
-// Glob all markdown files under /content/writing
-// NOTE: This path is relative to the project root, not the file.
-const files = import.meta.glob("../../content/writing/*.md", {
+// Glob all markdown files under ../content/writing
+// NOTE: This path is relative to the project root/src, not the file.
+const files = import.meta.glob("../content/writing/*.md", {
   as: "raw",
   eager: true,
 });
