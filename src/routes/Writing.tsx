@@ -1,5 +1,4 @@
 import Breadcrumb from "../components/Breadcrumb";
-import { WritingSidebar } from "../components/WritingSidebar";
 
 export default function Writing() {
   const posts = [
