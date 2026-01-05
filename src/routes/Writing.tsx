@@ -36,16 +36,21 @@ export default function Writing() {
 
         <h1 className="text-4xl font-bold mb-10">Writing</h1>
 
-        <p className="max-w-5xl text-lg leading-relaxed mb-10 text-gray-700 dark:text-gray-300">
+        <p className="max-w-5xl text-lg leading-relaxed mb-5 text-gray-700 dark:text-gray-300">
           Short, focused write-ups on system design, modernization, distributed workflows, and the engineering
           patterns I use in real-world platforms. These pieces reflect how I think about building reliable,
           scalable systems as a Principal-level engineer.
         </p>
 
         <div className="grid mb-8">
-          <a href="/writing/glossary" className="text-blue-600 dark:text-blue-400 hover:underline">
-            Glossary of Distributed Systems and Architecture Terms
+          <a 
+            href="/writing/glossary" 
+            className="text-blue-600 dark:text-blue-400 hover:underline">
+            Glossary of Distributed Systems & Architecture Terms
           </a>
+          <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">
+            A reference guide for terminology used throughout my writing.
+          </p>
         </div>
 
         <div className="grid gap-8">

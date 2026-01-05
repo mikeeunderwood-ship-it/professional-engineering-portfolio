@@ -19,10 +19,10 @@ export default function Projects() {
       link: "https://mikeeunderwood-seo-lead-generator.netlify.app/"
     },
     {
-      title: "Async & Concurrency Playground",
+      title: "Async & Concurrency (Demo)",
       status: "Under Construction",
       description:
-        "A hands-on demo showcasing async/await, Tasks, ValueTask, cancellation, parallelism, and performance patterns. Maps directly to Phase 1 of the Bootcamp.",
+        "A focused .NET demo exploring async/await, Tasks, ValueTask, cancellation, parallelism, and performance patterns. Designed to illustrate real‑world concurrency techniques and modern asynchronous engineering practices.",
       tech: "C#, .NET 8",
       link: null
     },
@@ -35,7 +35,7 @@ export default function Projects() {
       link: null
     },
     {
-      title: "Event-Driven Workflow Example",
+      title: "Event-Driven Workflow (Demo)",
       status: "Under Construction",
       description:
         "A small event-driven demo using queues, background processing, and retry logic to illustrate cloud-native patterns and distributed workflow design.",
