@@ -48,7 +48,7 @@ APIs should expose **capabilities**, not internal implementation details. That m
 - No exposing internal service boundaries
 - No coupling to internal workflows or orchestration steps
 
-A clean API boundary lets you refactor internals freely, change storage engines, rewrite services, introduce caching layers, or adopt event driven patterns without breaking consumers. The API becomes a stable façade that protects teams from churn.
+A clean API boundary lets you refactor internals freely, change storage engines, rewrite services, introduce caching layers, or adopt event driven patterns without breaking consumers. The API becomes a stable facade that protects teams from churn.
 
 ---
 

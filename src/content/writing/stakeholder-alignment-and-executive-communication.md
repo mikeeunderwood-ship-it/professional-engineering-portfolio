@@ -7,7 +7,8 @@ tags: ["leadership", "communication", "stakeholders", "architecture"]
 
 # Stakeholder Alignment & Executive Communication
 
-Architecture is not just about designing systems — it’s about aligning people.  
+Architecture is not just about designing systems, it’s about aligning people.  
+
 A technically sound solution fails if stakeholders don’t understand it, support it, or believe it solves the right problem. The most effective architects are the ones who can **translate complexity into clarity**, guide decision-making, and build trust across business, product, and engineering teams.
 
 This write-up outlines how I approach stakeholder alignment and executive communication in real-world engagements.
@@ -27,7 +28,7 @@ It shows up as:
 - architecture that doesn’t match business goals  
 - teams solving different problems  
 
-Alignment is not accidental — it’s designed.  
+Alignment is not accidental, it’s designed.  
 It requires intentional communication, structured conversations, and a shared understanding of goals, constraints, and tradeoffs.
 
 ---
@@ -83,7 +84,7 @@ Different groups use the same words to mean different things:
 - “platform”  
 - “service”  
 
-I establish a shared vocabulary early — not through formal documentation, but through consistent, clear communication.
+I establish a shared vocabulary early, not through formal documentation, but through consistent, clear communication.
 
 This reduces ambiguity and accelerates decision-making.
 
@@ -91,7 +92,7 @@ This reduces ambiguity and accelerates decision-making.
 
 # 3. Frame Decisions Through Tradeoffs
 
-Executives don’t need deep technical detail — they need clarity.
+Executives don’t need deep technical detail, they need clarity.
 
 I frame architectural decisions in terms of:
 
@@ -175,7 +176,7 @@ Only the information needed to make a decision.
 What they gain, what they lose, and why it matters.
 
 ### **Confidence**
-Not certainty — clarity of reasoning.
+Not certainty, clarity of reasoning.
 
 ### **Next steps**
 What happens now, and what support is needed.
@@ -202,7 +203,7 @@ To align them, I:
 4. created a shared vocabulary around “phased modernization”  
 5. guided discussions toward a sequenced, low-risk approach  
 
-The result was a unified strategy that balanced modernization with operational safety — and delivered value early without disrupting nationwide payment processing.
+The result was a unified strategy that balanced modernization with operational safety and delivered value early without disrupting nationwide payment processing.
 
 ---
 
@@ -226,7 +227,7 @@ They help stakeholders make confident decisions, even in ambiguous environments.
 
 # Closing Thoughts
 
-Stakeholder alignment and executive communication are not soft skills — they are **core architectural skills**.
+Stakeholder alignment and executive communication are not soft skills, they are **core architectural skills**.
 
 A great architecture is meaningless if:
 

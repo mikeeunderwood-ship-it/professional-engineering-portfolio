@@ -30,7 +30,7 @@ Key practices I use:
 - Treat observability as a first-class requirement, not an afterthought  
 - Design APIs and workflows so partial failures degrade gracefully  
 
-A system that “works when everything works” is not a distributed system — it’s a prototype.
+A system that “works when everything works” is not a distributed system, it’s a prototype.
 
 ---
 
@@ -45,7 +45,7 @@ I focus on:
 - Asynchronous communication where latency or reliability is a concern  
 - Avoiding shared databases or hidden cross-service dependencies  
 
-Loose coupling isn’t just a design preference — it’s what enables teams to move independently without destabilizing the platform.
+Loose coupling isn’t just a design preference, it’s what enables teams to move independently without destabilizing the platform.
 
 ---
 
@@ -66,7 +66,7 @@ Operability is where architecture meets reality. If engineers can’t understand
 
 ### **4. Prefer simple, predictable scaling paths**
 
-Scaling is rarely about cleverness — it’s about predictability.
+Scaling is rarely about cleverness, it’s about predictability.
 
 I lean toward:
 
@@ -106,7 +106,7 @@ I ask:
 - Can the system degrade gracefully instead of catastrophically?  
 - Are retries and backpressure mechanisms in place?  
 
-Good distributed systems don’t avoid failure — they contain it.
+Good distributed systems don’t avoid failure, they contain it.
 
 ---
 
@@ -153,12 +153,12 @@ Even in this small pipeline, the design choices matter.
   - Ensures writes are atomic and traceable  
   - Exposes clear failure modes  
 
-This simple pattern scales horizontally, isolates failures, and provides clear operational signals. It’s not the only pattern — but it’s one that consistently balances reliability, performance, and simplicity.
+This simple pattern scales horizontally, isolates failures, and provides clear operational signals. It’s not the only pattern, but it’s one that consistently balances reliability, performance, and simplicity.
 
 ---
 
 ## Closing Thoughts
 
-Distributed systems aren’t about complexity — they’re about clarity. The more intentional the boundaries, contracts, and failure modes, the more resilient the system becomes. Tools and frameworks evolve, but the underlying principles remain constant: design for failure, keep things loosely coupled, and build systems that are easy to understand and operate.
+Distributed systems aren’t about complexity, they’re about clarity. The more intentional the boundaries, contracts, and failure modes, the more resilient the system becomes. Tools and frameworks evolve, but the underlying principles remain constant: design for failure, keep things loosely coupled, and build systems that are easy to understand and operate.
 
-The best distributed systems don’t just scale — they stay predictable under stress, transparent during failures, and adaptable as the business grows.
+The best distributed systems don’t just scale, they stay predictable under stress, transparent during failures, and adaptable as the business grows.

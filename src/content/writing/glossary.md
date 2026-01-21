@@ -1,311 +1,380 @@
----
-title: "Glossary of Distributed Systems and Architecture Terms"
-summary: "A concise glossary of the core terms used throughout my writing on system design, modernization, APIs, event-driven systems, architecture strategy, and distributed debugging."
-date: "2026-01-03"
-tags: ["glossary", "distributed-systems", "architecture", "engineering"]
----
+# Glossary of Distributed Systems, Architecture, and Platform Terms
 
-# Glossary of Distributed Systems and Architecture Terms
-
-This glossary defines the key terms used across my writing on distributed system design, modernization, API architecture, event-driven patterns, architecture decision-making, stakeholder alignment, and debugging. Each definition is intentionally short, practical, and focused on how the term is used in real systems.
+This glossary defines the key terms used across my writing on distributed system design, modernization, API strategy, reliability engineering, platform architecture, governance, cloud fundamentals, and discovery. Each definition is intentionally short, practical, and focused on how the term is used in real systems.
 
 ---
 
 ## A
 
-### **Action Endpoint**
-An API endpoint that performs a specific operation on a resource, such as `POST /orders/{id}:cancel`.
+### **Action Endpoint**  
+An API endpoint that performs an operation on a resource (e.g., `POST /orders/{id}:cancel`).
 
-### **Additive Change**
-A backward compatible API change that adds new fields or capabilities without breaking existing consumers.
+### **Additive Change**  
+A backward‑compatible API change that adds fields or capabilities without breaking consumers.
 
-### **Architectural Guardrail**
-A lightweight rule or constraint that guides teams toward consistent, safe architectural decisions without blocking autonomy.
+### **Anti‑Corruption Layer (ACL)**  
+A boundary that shields modern systems from legacy complexity by translating formats, normalizing data, and preventing domain leakage.
 
-### **Architecture Decision Record (ADR)**
-A short document capturing a significant architectural decision, the options considered, and the reasoning behind the final choice.
+### **Architectural Guardrail**  
+A lightweight rule that guides teams toward consistent, safe decisions without blocking autonomy.
 
-### **Alignment Drift**
-The gradual divergence between engineering decisions and business goals, often caused by unclear communication or shifting priorities.
+### **Architectural Integrity**
+The long‑term consistency, coherence, and reliability of a system’s design, protected through governance, standards, and influence.
 
-### **Async Workflow**
-A workflow where operations run independently and do not block the caller, improving responsiveness and scalability.
+### **Architectural Narrative**
+The consistent, repeated messaging that explains why the architecture exists, what it protects, and how teams should apply it.
 
-### **Autonomy (Service Autonomy)**
-The ability for a service or team to evolve independently without requiring coordinated releases or shared deployments.
+### **Architecture Decision Record (ADR)**  
+A short document capturing a significant architectural decision and its rationale.
+
+### **Assumption Validation**
+Testing or prototyping to confirm whether a technical or architectural assumption is true before making a decision.
+
+### **Async Workflow**  
+A workflow where operations run independently and do not block the caller.
+
+### **Authentication Boundary**  
+A clear separation between identity verification and downstream service logic, ensuring consistent security enforcement.
 
 ---
 
 ## B
 
-### **Backoff**
-A retry strategy where clients wait progressively longer between attempts to avoid overwhelming a failing service.
+### **Backoff**  
+A retry strategy where clients wait progressively longer between attempts.
 
-### **Blast Radius**
-The scope of impact when a component fails. Good system design reduces blast radius through isolation and boundaries.
+### **Blast Radius**  
+The scope of impact when a component fails; minimized through isolation.
 
-### **Bounded Context**
-A domain driven design concept that defines a clear boundary around a domain model and its language.
+### **Bounded Context**  
+A domain boundary with its own model and language.
+
+### **Bulkhead**  
+A reliability pattern that isolates resources (threads, pools, queues) to prevent cascading failures.
 
 ---
 
 ## C
 
-### **Capability Mapping**
-A technique for identifying the core capabilities a system or organization must support, used to guide modernization and boundary design.
+### **Capability Mapping**  
+Identifying the core capabilities a system must support, used to guide modernization and platform design.
 
-### **Change Surface Area**
-The amount of the system affected by a change. Smaller surfaces reduce risk and improve deployability.
+### **Change Surface Area**  
+The amount of the system affected by a change.
 
-### **Chaos Testing**
-Controlled failure injection used to reveal hidden assumptions and validate system resilience.
+### **Chaos Testing**  
+Controlled failure injection to validate resilience.
 
-### **Circuit Breaker**
-A pattern that stops calls to an unhealthy dependency to prevent cascading failures.
+### **Circuit Breaker**  
+A pattern that stops calls to an unhealthy dependency.
 
-### **Cloud Native**
-Architectural principles and patterns optimized for cloud environments, including elasticity, managed services, and distributed workflows.
+### **Cloud Native**  
+Architectural principles optimized for cloud environments: elasticity, automation, distributed workflows.
 
-### **Communication Contract**
-A shared agreement on how teams exchange information—formats, cadence, expectations—used to reduce ambiguity and misalignment.
+### **Configuration Over Customization**  
+A platform principle where tenants configure behavior instead of forking code.
 
-### **Correlation ID**
-A unique identifier added to logs and traces to follow a request across services.
+### **Conflict Decomposition**
+Breaking down architectural disagreements into their underlying causes (risk, incentives, constraints) to resolve them effectively.
 
-### **Cursor Pagination**
-A pagination method that uses opaque cursors instead of numeric offsets, improving performance and consistency at scale.
+### **Correlation ID**  
+A unique identifier used to trace a request across services.
+
+### **Cross‑Team Alignment**
+The process of ensuring multiple teams share the same architectural direction, assumptions, and long‑term goals.
+
+### **Cross‑Tenant Isolation**  
+Ensuring one tenant’s data, performance, or failures cannot impact another.
 
 ---
 
 ## D
 
-### **Dead Letter Queue (DLQ)**
-A holding queue for messages that repeatedly fail processing, used to isolate poison messages.
+### **Dead Letter Queue (DLQ)**  
+A queue for messages that repeatedly fail processing.
 
-### **Deduplication**
-The process of detecting and ignoring duplicate events or messages.
+### **Decision Framework**  
+A structured approach for evaluating architectural options.
 
-### **Decision Framework**
-A structured approach for evaluating architectural options using criteria such as risk, cost, complexity, and long-term impact.
+### **Decision Log**  
+A running record of architectural decisions.
 
-### **Decision Log**
-A running record of architectural decisions that provides traceability and prevents repeated debates.
+### **Discovery Framework**  
+A structured method for clarifying requirements, constraints, and risks before design begins.
 
-### **Distributed Tracing**
-A technique for tracking a request across multiple services using spans and trace IDs.
+### **Distributed Tracing**  
+Tracking a request across multiple services using spans and trace IDs.
 
-### **Domain Mapping**
-The process of identifying domains, subdomains, and boundaries when modernizing or decomposing a legacy system.
+### **Domain Mapping**  
+Identifying domains and boundaries during modernization or decomposition.
 
 ---
 
 ## E
 
-### **Event Carried State Transfer**
-A pattern where events include the relevant state needed by consumers, reducing cross service lookups.
+### **Elastic Scaling**  
+Automatically adjusting compute capacity based on load.
 
-### **Event Notification**
-A lightweight event that signals something happened without including full state.
+### **Event Carried State Transfer**  
+Events include the state consumers need, reducing lookups.
 
-### **Event Sourcing**
-A storage model where state is derived from a sequence of events rather than a single record.
+### **Event Notification**  
+A lightweight event signaling that something happened.
 
-### **Evolvability**
-The ability of a system or API to change over time without breaking consumers or requiring large coordinated rewrites.
+### **Event Sourcing**  
+State derived from a sequence of events.
 
-### **Executive Summary (Technical)**
-A concise explanation of a technical proposal tailored for non-technical leaders, focusing on outcomes, risks, and tradeoffs.
+### **Evolvability**  
+A system’s ability to change without breaking consumers.
+
+### **Executive Summary (Technical)**  
+A concise explanation of a proposal for non‑technical leaders.
 
 ---
 
 ## F
 
-### **Fan Out**
-A pattern where a single event triggers multiple downstream actions or services.
+### **Fan Out**  
+A single event triggers multiple downstream actions.
 
-### **Fault Isolation**
-Designing systems so failures remain contained within a small area and do not cascade across the platform.
+### **Fault Isolation**  
+Containing failures within a small area.
 
-### **Future-State Architecture**
-The target architecture a modernization effort aims to achieve, often defined through diagrams, principles, and capability maps.
+### **Feature Flag**  
+A mechanism for enabling or disabling functionality at runtime.
+
+### **Future‑State Architecture**  
+The target architecture a modernization effort aims to achieve.
 
 ---
 
 ## G
 
-### **Governance Model**
-The structure and processes used to ensure architectural consistency, quality, and compliance across teams.
+### **Governance Model**  
+The structure used to ensure architectural consistency and quality.
+
+### **Guardrails, Not Gates**  
+A governance philosophy that guides teams without blocking delivery.
 
 ---
 
 ## H
 
-### **Health Check**
-A lightweight endpoint or signal used to determine whether a service is functioning correctly.
+### **Health Check**  
+A signal indicating whether a service is functioning correctly.
+
+### **Horizontal Scaling**  
+Increasing capacity by adding more instances rather than scaling vertically.
 
 ---
 
 ## I
 
-### **Idempotency**
-The property that repeated operations produce the same result, essential for safe retries in distributed systems.
+### **Idempotency**  
+Repeated operations produce the same result.
 
-### **Idempotency Key**
-A client provided token used to ensure that a POST request is processed only once.
+### **Idempotency Key**  
+A token ensuring a POST request is processed only once.
 
-### **Integration Boundary**
-A stable contract between systems that allows internal implementations to evolve independently.
+### **Influence Without Authority**
+The ability to guide teams, shape decisions, and drive architectural outcomes without formal reporting lines or managerial control.
+
+### **Integration Boundary**  
+A stable contract between systems.
+
+### **Isolation Model (Multi‑Tenant)**  
+The degree to which tenants share or isolate compute, data, and infrastructure.
 
 ---
 
 ## L
 
-### **Latency Spike**
-A sudden increase in response time, often the first visible symptom of a deeper issue.
+### **Latency Spike**  
+A sudden increase in response time.
 
-### **Legacy Entanglement**
-Hidden or implicit dependencies inside a legacy system that make modernization difficult and increase migration risk.
+### **Legacy Entanglement**  
+Hidden dependencies that complicate modernization.
 
-### **Legacy Monolith**
-A large, tightly coupled system where business logic, data access, and workflows are intertwined, making change risky and slow.
+### **Least Privilege**  
+A security principle where identities receive only the access they need.
 
 ---
 
 ## M
 
-### **Message Duplication**
-A normal behavior in distributed messaging systems where the same event may be delivered more than once.
+### **Message Duplication**  
+A normal behavior in distributed messaging systems.
 
-### **Migration Path**
-A stepwise plan for modernizing a legacy system without rewriting everything at once.
+### **Migration Path**  
+A stepwise modernization plan.
 
-### **Modernization Blueprint**
-A high-level plan outlining phases, boundaries, risks, and sequencing for transforming a legacy platform.
+### **Modernization Blueprint**  
+A high‑level plan outlining phases and risks.
 
-### **Modernization Strangler Pattern**
-A modernization approach where new capabilities are built alongside the legacy system and gradually replace it.
+### **Monotonic Clock**  
+A clock that always moves forward.
 
-### **Monotonic Clock**
-A clock that always moves forward, used to avoid issues caused by system time drift.
+### **Multi‑Tenant Architecture**  
+A platform model where multiple tenants share infrastructure with controlled isolation.
+
+---
+
+## N
+
+### **Noisy Neighbor**  
+A tenant whose workload negatively impacts others in a shared environment.
+
+### **Non‑Functional Requirements (NFRs)**  
+Requirements describing system behavior: performance, reliability, compliance, scalability.
 
 ---
 
 ## O
 
-### **Offset Pagination**
-A simple pagination method using numeric offsets, suitable for low volume datasets.
+### **Offset Pagination**  
+Pagination using numeric offsets.
 
-### **Operational Complexity**
-The overhead required to deploy, monitor, debug, and maintain a system. Modernization efforts often aim to reduce this.
+### **Operational Complexity**  
+The overhead required to deploy, monitor, and maintain a system.
 
-### **Organizational Coupling**
-A condition where team structures or communication patterns create friction that mirrors technical coupling.
+### **Organizational Coupling**  
+Team structures that mirror technical coupling.
 
-### **Outbox Pattern**
-A pattern that ensures reliable event publishing by writing events to a database table within the same transaction as business data.
+### **Outbox Pattern**  
+Ensures reliable event publishing within a transaction.
 
 ---
 
 ## P
 
-### **Partial Outage**
-A failure that affects only part of the system, such as a single region, partition, or dependency.
+### **Parallel Run**  
+Running legacy and modernized systems side‑by‑side to validate behavior.
 
-### **Poison Message**
-A message that always fails processing and must be isolated to avoid blocking the pipeline.
+### **Partial Outage**  
+A failure affecting only part of the system.
 
-### **Predictability**
-A design principle where APIs and systems behave consistently, reducing cognitive load and integration risk.
+### **PCI Scope**  
+The portion of a system subject to PCI compliance requirements.
 
-### **Principle-Driven Architecture**
-An approach where architectural decisions are guided by a small set of explicit principles rather than ad-hoc preferences.
+### **Platform Capability**  
+A shared service (identity, configuration, messaging) used across tenants or teams.
 
-### **Program Increment (PI)**
-A time-boxed planning cycle used in scaled agile environments to align teams on priorities and deliverables.
+### **Poison Message**  
+A message that always fails processing.
+
+### **Predictability**  
+Consistent system behavior that reduces integration risk.
+
+### **Principle‑Driven Architecture**  
+Architecture guided by explicit principles.
+
+### **Psychological Safety (in Architecture)**
+A team environment where engineers feel safe raising concerns, challenging assumptions, and discussing tradeoffs without fear of blame.
 
 ---
 
 ## R
 
-### **RED Metrics**
-A monitoring framework focused on Rate, Errors, and Duration for understanding service health.
+### **RED Metrics**  
+Rate, Errors, Duration, a service health framework.
 
-### **Refactoring Boundary**
-A stable API or domain boundary that allows internal components to be rewritten without impacting consumers.
+### **Refactoring Boundary**  
+A stable API that allows internal rewrites.
 
-### **Retry Storm**
-A failure amplification pattern where retries overload an already struggling service.
+### **Reference Implementation**
+A minimal, working example that demonstrates how a pattern or architectural decision should be applied in practice.
 
-### **Risk Matrix**
-A tool for evaluating architectural risks based on likelihood and impact, used to prioritize mitigation strategies.
+### **Retry Storm**  
+Retries that overload a struggling service.
+
+### **Risk Matrix**  
+A tool for evaluating risks by likelihood and impact.
 
 ---
 
 ## S
 
-### **Saga**
-A pattern for coordinating long running workflows across multiple services using events and compensating actions.
+### **Saga**  
+A pattern for coordinating long‑running workflows.
 
-### **Separation of Concerns**
-A design principle that keeps capabilities, responsibilities, and data ownership clearly separated.
+### **Scalability Model**  
+How a system grows with load: horizontal, vertical, or partitioned.
 
-### **Span**
-A unit of work in distributed tracing that represents a single operation within a request.
+### **Separation of Concerns**  
+Keeping responsibilities and data ownership clearly separated.
 
-### **Stakeholder Map**
-A visual representation of the people, teams, and roles affected by a decision, used to plan communication and alignment.
+### **Service Boundary**  
+A clear definition of what a service owns and exposes.
 
-### **Strategic Tradeoff**
-A decision where no option is perfect, requiring a balance between competing priorities such as speed, cost, and long-term flexibility.
+### **Shared Outcomes**
+A framing technique where architectural decisions are aligned to common goals (reliability, scalability, compliance) rather than imposed as directives.
 
-### **Structured Logging**
-Logs formatted with consistent fields to enable machine parsing and correlation.
+### **Stakeholder Map**  
+A representation of people and roles affected by a decision.
+
+### **Strategic Tradeoff**  
+A decision balancing competing priorities.
+
+### **Surfacing Constraints**
+The practice of uncovering hidden pressures (timeline, ownership, risk tolerance, legacy limitations) that drive architectural conflict.
+
+### **Structured Logging**  
+Logs formatted with consistent fields.
+
+### **Structured Options**
+A decision‑making approach where architects present multiple viable paths (ideal, pragmatic, acceptable‑with‑guardrails) instead of a single mandated solution.
+
+### **Synchronous vs Asynchronous Integration**  
+Choosing between immediate responses or decoupled workflows.
 
 ---
 
 ## T
 
-### **Technical Narrative**
-A structured explanation of a system or proposal that connects technical decisions to business outcomes.
+### **Technical Narrative**  
+A structured explanation connecting technical decisions to business outcomes.
 
-### **Trace ID**
-A unique identifier that ties together all spans in a distributed trace.
+### **Tenant Isolation**  
+Ensuring tenants cannot access or impact each other’s data or performance.
 
-### **Tradeoff Analysis**
-A comparison of architectural options that highlights benefits, risks, constraints, and long-term implications.
+### **Trace ID**  
+A unique identifier for a distributed trace.
 
-### **Transient Failure**
-A temporary error such as a timeout or network glitch that often resolves on retry.
+### **Tradeoff Analysis**  
+Comparing architectural options and implications.
 
-### **Tight Coupling**
-A condition where systems depend heavily on each other’s internal behavior, making change risky and slow.
+### **Transient Failure**  
+A temporary error that often resolves on retry.
+
+### **Tight Coupling**  
+Systems depending heavily on each other’s internals.
 
 ---
 
 ## U
 
-### **USE Metrics**
-A monitoring framework focused on Utilization, Saturation, and Errors for understanding resource bottlenecks.
+### **USE Metrics**  
+Utilization, Saturation, Errors, a resource bottleneck framework.
 
 ---
 
 ## V
 
-### **Versioning**
-The practice of evolving APIs in controlled, backward compatible ways, often using `/v1`, `/v2`, or header based negotiation.
+### **Versioning**  
+Evolving APIs in controlled, backward‑compatible ways.
 
 ---
 
 ## W
 
-### **Workflow Choreography**
-A saga style where each service reacts to events and emits new ones without a central coordinator.
+### **Workflow Choreography**  
+Each service reacts to events without a central coordinator.
 
-### **Workflow Orchestration**
-A saga style where a central process manager coordinates the steps of a workflow.
+### **Workflow Orchestration**  
+A central process manager coordinates workflow steps.
 
 ---
 
 ## Closing Thoughts
 
-A shared vocabulary makes complex systems easier to understand, discuss, and evolve. This glossary provides the foundational terms used throughout my writing and reflects the mental models I rely on when designing, modernizing, and debugging distributed systems.
+A shared vocabulary makes complex systems easier to understand, design, and evolve. This glossary reflects the mental models I rely on when building distributed systems, modernizing legacy platforms, designing APIs, leading governance, and architecting cloud‑native platforms.

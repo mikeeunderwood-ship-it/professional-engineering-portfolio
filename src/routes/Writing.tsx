@@ -15,10 +15,34 @@ export default function Writing() {
       link: "/writing/stakeholder-alignment-and-executive-communication",
     },
     {
+      title: "Influencing Without Authority: How Principal Architects Lead Across Teams",
+      summary:
+        "How Principal Architects lead across teams by influencing decisions, resolving conflict, and driving alignment without relying on authority.",
+      link: "/writing/influencing-without-authority",
+    },
+    {
       title: "How I Approach Distributed System Design",
       summary:
         "The principles, tradeoffs, and mental models I rely on when designing distributed systems at scale.",
       link: "/writing/distributed-system-design",
+    },
+    {
+      title: "Cloud Architecture Fundamentals for Distributed Systems",
+      summary:
+        "How I design cloud‑native architectures by selecting the compute, messaging, and data patterns that keep distributed systems scalable and reliable.",
+      link: "/writing/cloud-architecture-fundamentals-for-distributed-systems",
+    },
+    {
+      title: "Architecting for Reliability: Patterns for High‑Volume Systems",
+      summary:
+        "How I architect systems for reliability using patterns that handle load, failures, and unpredictable runtime behavior.",
+      link: "/writing/architecting-for-reliability",
+    },
+    {
+      title: "Debugging Distributed Systems",
+      summary:
+        "How I diagnose failures, latency, and unexpected behavior in distributed, cloud-native systems.",
+      link: "/writing/debugging-distributed-systems",
     },
     {
       title: "Practical API Design for Scalable Systems",
@@ -27,61 +51,55 @@ export default function Writing() {
       link: "/writing/api-design-principles",
     },
     {
+      title: "Integration Patterns & API Strategy",
+      summary:
+        "How I design integration workflows, service boundaries, and long-term API evolution strategies.",
+      link: "/writing/integration-patterns-and-api-strategy",
+    },
+    {
       title: "Event-Driven Patterns That Scale",
       summary:
         "A practical guide to the event-driven patterns I use to build reliable, decoupled, and scalable systems.",
       link: "/writing/event-driven-patterns",
     },
     {
+      title: "Platform Thinking & Multi-Tenant Architecture",
+      summary:
+        "Principles for designing extensible, multi-tenant platforms that scale with business needs.",
+      link: "/writing/platform-thinking-and-multi-tenant-architecture",
+    },
+    {
       title: "Modernizing Legacy Platforms",
       summary:
-        "Lessons learned from migrating monolithic enterprise systems into scalable, cloud-native architectures.",
+        "How I modernize legacy systems through incremental, low‑risk patterns that improve reliability, performance, and long‑term maintainability.",
       link: "/writing/modernizing-legacy-platforms",
     },
     {
       title: "Modernization Strategy & Legacy System Transformation",
       summary:
-        "Patterns, risks, and phased approaches for modernizing large-scale legacy platforms.",
+        "How I design modernization strategies, align stakeholders, and lead the transformation of large, legacy platforms.",
       link: "/writing/modernization-strategy-and-legacy-transformation",
-    },
-    {
-      title: "Debugging Distributed Systems",
-      summary:
-        "How I diagnose failures, latency, and unexpected behavior in distributed, cloud-native systems.",
-      link: "/writing/debugging-distributed-systems",
-    },
-
-    // ⭐ NEW ARTICLES (Coming Soon)
-    {
-      title: "Integration Patterns & API Strategy",
-      summary:
-        "How I design integration workflows, service boundaries, and long-term API evolution strategies.",
-      link: null,
-    },
-    {
-      title: "Platform Thinking & Multi-Tenant Architecture",
-      summary:
-        "Principles for designing extensible, multi-tenant platforms that scale with business needs.",
-      link: null,
-    },
-    {
-      title: "Discovery Frameworks & Requirements Clarification",
-      summary:
-        "My approach to running discovery, mapping current-state systems, and shaping future-state architectures.",
-      link: null,
-    },
-    {
-      title: "Security, Compliance & Regulated Environments",
-      summary:
-        "Architectural considerations for PCI, PII, HIPAA, and secure data flows in regulated industries.",
-      link: null,
     },
     {
       title: "Architecture Governance & Technical Review Leadership",
       summary:
         "How I establish architectural guardrails, lead review boards, and ensure production-ready solutions.",
-      link: null,
+      link: "/writing/architecture-governance-and-technical-review-leadership",
     },
+    {
+      title: "Security, Compliance & Regulated Environments",
+      summary:
+        "Architectural considerations for PCI, PII, HIPAA, and secure data flows in regulated industries.",
+      link: "/writing/security-compliance-and-regulated-environments",
+    },
+    {
+      title: "Discovery Frameworks & Requirements Clarification",
+      summary:
+        "My approach to running discovery, mapping current-state systems, and shaping future-state architectures.",
+      link: "/writing/discovery-frameworks-and-requirements-clarification",
+    },
+
+    // ⭐ NEW ARTICLES (Coming Soon)
   ];
 
   return (
@@ -89,12 +107,18 @@ export default function Writing() {
       <div className="container mx-auto max-w-5xl">
         <Breadcrumb />
 
-        <h1 className="text-4xl font-bold mb-10">Writing</h1>
+        <h1 className="text-4xl font-bold mb-6">Writing</h1>
 
         <p className="max-w-5xl text-lg leading-relaxed mb-5 text-gray-700 dark:text-gray-300">
-          Short, focused write-ups on system design, modernization, distributed workflows, and the engineering
-          patterns I use in real-world platforms. These pieces reflect how I think about building reliable,
-          scalable systems as a Principal-level engineer.
+          Short, focused pieces on system design, modernization, distributed workflows, and the 
+          architecture patterns I use in real‑world platforms. These articles reflect the principles 
+          and mental models I rely on to build reliable, scalable systems as a Principal‑level architect.
+        </p>
+
+        <p className="max-w-5xl text-lg leading-relaxed mb-5 text-gray-700 dark:text-gray-300">
+          I write about architecture the way I practice it: through trade‑offs, patterns, system 
+          behavior, and the reasoning behind decisions. These aren’t tutorials, they’re the frameworks 
+          I use to design, evaluate, and guide complex systems.
         </p>
 
         <div className="grid mb-8">
@@ -102,7 +126,7 @@ export default function Writing() {
             href="/writing/glossary"
             className="text-blue-600 dark:text-blue-400 hover:underline"
           >
-            Glossary of Distributed Systems & Architecture Terms
+            Glossary of Distributed Systems & Modern Architecture
           </a>
           <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">
             A reference guide for terminology used throughout my writing.

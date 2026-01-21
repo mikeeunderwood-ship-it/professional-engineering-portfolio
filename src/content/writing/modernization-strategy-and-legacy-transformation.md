@@ -7,16 +7,15 @@ tags: ["modernization", "legacy", "architecture", "strategy"]
 
 # Modernization Strategy & Legacy System Transformation
 
-Modernization is one of the most misunderstood responsibilities in architecture.  
-It’s rarely a rewrite, and it’s never just a technical exercise. Modernization is a **strategic transformation** that balances risk, cost, compliance, operational realities, and long-term business value.
+Modernization is one of the most misunderstood responsibilities in architecture. It’s rarely a rewrite, and it’s never just a technical exercise. Modernization is a **strategic transformation** that balances risk, cost, compliance, operational realities, and long-term business value.
 
-This write-up outlines how I approach modernization in real enterprise environments — the mental models, patterns, and decision frameworks that consistently lead to safe, predictable outcomes.
+This write-up outlines how I approach modernization in real enterprise environments and the mental models, patterns, and decision frameworks that consistently lead to safe, predictable outcomes.
 
 ---
 
-# Why Modernization Is Harder Than It Looks
+## Why Modernization Is Harder Than It Looks
 
-Legacy systems survive because they work — not because they’re elegant.
+Legacy systems survive because they work, not because they’re simple.
 
 They often contain:
 
@@ -27,12 +26,11 @@ They often contain:
 - compliance constraints  
 - operational dependencies no one remembers until they break  
 
-Modernization fails when teams underestimate these realities.  
-It succeeds when architecture acknowledges them and builds a plan around **risk, sequencing, and clarity**.
+Modernization fails when teams underestimate these realities. It succeeds when architecture acknowledges them and builds a plan around **risk, sequencing, and clarity**.
 
 ---
 
-# My Modernization Framework
+## My Modernization Framework
 
 I use a structured, repeatable framework that works across industries, tech stacks, and organizational maturity levels.
 
@@ -44,12 +42,11 @@ The framework has five phases:
 4. **Parallel Run & Observability**  
 5. **Cutover, Hardening, and Evolution**
 
-Let’s break each one down.
-
 ---
 
-# 1. Current-State Mapping  
-Modernization begins with understanding what exists — not what we *wish* existed.
+## 1. Current-State Mapping  
+
+Modernization begins with understanding what exists, not what we *wish* existed.
 
 I map:
 
@@ -77,13 +74,13 @@ This is the real danger zone:
 - shared schemas  
 - shared file drops  
 - undocumented cron jobs  
-- “temporary” scripts from 10 years ago  
+- “temporary” scripts from a decade ago  
 
 You can’t modernize what you don’t understand.
 
 ---
 
-# 2. Risk-Based Prioritization  
+## 2. Risk-Based Prioritization  
 Modernization is not a feature roadmap — it’s a **risk roadmap**.
 
 I categorize components into:
@@ -110,7 +107,7 @@ This is where modernization starts.
 
 ---
 
-# 3. Boundary Extraction & the Strangler Pattern  
+## 3. Boundary Extraction & the Strangler Pattern  
 A full rewrite is almost always the wrong answer.  
 The right answer is usually **incremental extraction**.
 
@@ -138,7 +135,7 @@ This approach reduces risk and allows modernization to deliver value early.
 
 ---
 
-# 4. Parallel Run & Observability  
+## 4. Parallel Run & Observability  
 Modernization without observability is gambling.
 
 Before cutover, I ensure:
@@ -162,11 +159,11 @@ Before cutover, I ensure:
 - support training  
 - compliance validation  
 
-Parallel run is where modernization becomes real — and where issues surface safely.
+Parallel run is where modernization becomes real and where issues surface safely.
 
 ---
 
-# 5. Cutover, Hardening, and Evolution  
+## 5. Cutover, Hardening, and Evolution  
 Cutover is not the end. It’s the midpoint.
 
 After migration:
@@ -188,7 +185,7 @@ It’s the beginning of a healthier, more adaptable platform.
 
 ---
 
-# Real-World Example: Migrating a Mission-Critical Payments Platform
+## Real-World Example: Migrating a Mission-Critical Payments Platform
 
 One of the largest modernization efforts I led involved migrating a nationwide walk-in payments platform from:
 
@@ -206,11 +203,11 @@ The modernization succeeded because we:
 - validated outputs at scale  
 - hardened the platform before cutover  
 
-The result was a more reliable, maintainable, and compliant platform — delivered without disrupting nationwide payment processing.
+The result was a more reliable, maintainable, and compliant platform, delivered without disrupting nationwide payment processing.
 
 ---
 
-# Modernization Is Architecture Leadership
+## Modernization Is Architecture Leadership
 
 Modernization is where architecture, engineering, and business strategy intersect.
 
@@ -231,12 +228,12 @@ The difference is architectural clarity.
 
 ---
 
-# Closing Thoughts
+## Closing Thoughts
 
 Modernization isn’t about replacing old code with new code.  
 It’s about **transforming the system safely**, **incrementally**, and **strategically**.
 
-The goal is not just a modern stack — it’s a platform that:
+The goal is not just a modern stack, it’s a platform that:
 
 - scales  
 - evolves  

@@ -31,7 +31,7 @@ export default function Header() {
           href="/"
           className="text-xl font-semibold text-gray-900 dark:text-gray-100 whitespace-nowrap"
         >
-          Mike Underwood
+          Mike E Underwood
         </a>
 
         {/* CENTER — Desktop Nav */}
@@ -47,7 +47,7 @@ export default function Header() {
 
           {/* Resume Button */}
           <a
-            href="/mikeeunderwood_software_engineer_resume.pdf"
+            href="/mikeeunderwood_resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="hidden md:inline-flex items-center gap-1.5 rounded-md border border-blue-600 dark:border-blue-400 px-3.5 py-1.5 text-sm font-medium text-blue-600 dark:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-900/30 transition-colors"
@@ -55,7 +55,7 @@ export default function Header() {
             <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
-            Résumé
+            Resume
           </a>
 
           <DarkModeToggle />
@@ -114,12 +114,12 @@ export default function Header() {
           </NavLink>
 
           <a
-            href="/mikeeunderwood_software_engineer_resume.pdf"
+            href="/mikeeunderwood_resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="block text-blue-600 dark:text-blue-400 hover:underline"
           >
-            Résumé
+            Resume
           </a>
         </div>
       )}

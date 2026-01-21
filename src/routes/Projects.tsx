@@ -7,6 +7,7 @@ export default function Projects() {
       status: "Live",
       description:
         "A modern, production-grade engineering portfolio built with Vite, React, TypeScript, and TailwindCSS. Includes custom routing, markdown-driven content, dark mode, responsive layout, and a clean component architecture.",
+      note: "",
       tech: "Vite, React, TypeScript, TailwindCSS, Netlify",
       link: "https://mikeeunderwood.dev"
     },
@@ -15,6 +16,7 @@ export default function Projects() {
       status: "Live",
       description:
         "A TypeScript-based tool deployed on Netlify for generating SEO-optimized content and leads. Demonstrates modern tooling, DX focus, and clean UI engineering.",
+      note: "",
       tech: "TypeScript, Vite, Netlify",
       link: "https://mikeeunderwood-seo-lead-generator.netlify.app/"
     },
@@ -23,6 +25,7 @@ export default function Projects() {
       status: "Under Construction",
       description:
         "A focused .NET demo exploring async/await, Tasks, ValueTask, cancellation, parallelism, and performance patterns. Designed to illustrate real‑world concurrency techniques and modern asynchronous engineering practices.",
+      note: "This demo will include benchmarks, trade‑off analysis, and architectural guidance for choosing concurrency models.",
       tech: "C#, .NET 8",
       link: null
     },
@@ -31,6 +34,7 @@ export default function Projects() {
       status: "Under Construction",
       description:
         "A clean .NET API demonstrating layered architecture, async workflows, and containerized deployment. Designed as a focused demo of modern API engineering patterns.",
+      note: "Includes architectural diagrams, request flows, and reasoning behind design decisions.",
       tech: "C#, .NET 8, Docker",
       link: null
     },
@@ -39,7 +43,17 @@ export default function Projects() {
       status: "Under Construction",
       description:
         "A small event-driven demo using queues, background processing, and retry logic to illustrate cloud-native patterns and distributed workflow design.",
+      note: "Demonstrates event choreography vs. orchestration, retry strategies, and idempotent workflow design.",
       tech: "C#, Messaging, Worker Services",
+      link: null
+    },
+    {
+      title: "Integration Architecture (Demo)",
+      status: "Under Construction",
+      description:
+        "A hands‑on demonstration of modern integration architecture patterns used to connect distributed systems across cloud and on‑prem environments. This demo highlights API gateway design, downstream service orchestration, transformation layers, and resilient communication strategies that support high‑volume, enterprise‑grade workflows.",
+      note: "The solution includes architectural diagrams, request flows, error‑handling strategies, and reasoning behind key design decisions. It reflects the integration challenges common in modernization, hybrid cloud, and multi‑system enterprise environments.",
+      tech: "C#, .NET 8, API Gateway, Serverless Functions, Message Queue",
       link: null
     }
   ];
@@ -84,6 +98,11 @@ export default function Projects() {
               {/* Description */}
               <p className="text-gray-700 dark:text-gray-300 mb-4">
                 {project.description}
+              </p>
+
+              {/* Notes */}
+              <p className="text-gray-700 dark:text-gray-300 mb-4">
+                {project.note}
               </p>
 
               {/* Tech Stack */}

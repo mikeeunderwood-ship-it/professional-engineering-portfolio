@@ -7,36 +7,37 @@ export default function Home() {
         <Breadcrumb />
 
         {/* Headline */}
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 text-gray-900 dark:text-gray-100">
-          Mike Underwood
+        <h1 className="text-4xl sm:text-5xl lg:text-5xl font-bold mb-4 text-gray-900 dark:text-gray-100">
+          Mike E Underwood
         </h1>
 
         {/* Subheadline */}
-        <h2 className="text-xl sm:text-2xl lg:text-3xl text-gray-600 dark:text-gray-400 mb-10">
-          Principal Software Engineer & Solutions Architect
+        <h2 className="text-xl sm:text-2xl lg:text-3xl text-gray-600 dark:text-gray-400 mb-4">
+          Principal Solutions Architect & Staff-Level Engineering Leader
         </h2>
 
         {/* Summary */}
         <p className="text-base sm:text-lg lg:text-xl leading-relaxed text-gray-800 dark:text-gray-200 mb-8">
-          I’m a Principal Software Engineer with deep Solutions Architecture experience, 
-          currently seeking a Principal or Staff Engineering role where I can design, 
-          build, and lead complex systems. I’m also open to Solutions Architect positions 
-          that value hands-on engineering and technical leadership.
+          Principal‑level Solutions Architect with deep engineering expertise, focused on designing, modernizing, 
+          and guiding complex distributed systems. Currently exploring Principal or Staff Solutions Architect 
+          roles where architectural leadership, system design, and cross‑team technical direction drive meaningful 
+          impact. Also open to Principal/Staff Engineering positions that value strong architecture ownership 
+          supported by hands‑on technical depth.
         </p>
 
         {/* Top Skills Row */}
-        <div className="flex flex-wrap gap-3 mb-6">
+        <div className="flex flex-wrap gap-3 mb-4">
           {[
             "Distributed Systems",
             "System Design",
             "Cloud‑Native Engineering",
-            ".NET / C#",
-            "API Engineering",
             "Event‑Driven Design",
+            "API Architecture",
+            "Cloud-Native Architecture",
             "Azure",
             "AWS Lambda (Serverless)",
-            "Performance Optimization",
-            "Reliability Engineering"
+            "Modernization & Legacy Transformation",
+            "Reliability & Performance Engineering"
           ].map((skill) => (
             <span
               key={skill}
@@ -53,40 +54,22 @@ export default function Home() {
             Current Focus
           </h3>
 
-          <p className="text-lg text-gray-800 dark:text-gray-200 mb-4">
+          <p className="text-lg text-gray-800 dark:text-gray-200 mb-2">
             What I’m actively sharpening and driving right now:
           </p>
 
-          <ul className="space-y-2 text-gray-700 dark:text-gray-300">
-            <li>• Exploring Principal/Staff Software Engineer opportunities, with openness to hands-on Solutions Architect roles.</li>
-            <li>• Deepening my Principal-level engineering practice across distributed systems, reliability, and performance.</li>
-            <li>• Refining modern architecture patterns across event-driven workflows, API design, and cloud-native systems.</li>
-            <li>• Strengthening hands-on engineering in .NET, C#, TypeScript, and modern web stacks.</li>
-            <li>• Building polished, production-grade engineering assets that reflect senior-level ownership and technical clarity.</li>
+          <ul className="space-y-0 text-gray-700 dark:text-gray-300">
+            <li>• Deepening my Principal‑level architecture practice across distributed systems, integration patterns, and event‑driven workflows</li>
+            <li>• Driving modernization across API design, cloud‑native systems, and high‑volume platforms</li>
+            <li>• Re‑engaging hands‑on engineering in .NET, C#, TypeScript, and modern web stacks to sharpen architectural decision‑making</li>
+            <li>• Producing polished, production‑grade architectural assets that demonstrate senior‑level clarity and system‑wide reasoning</li>
+            <li>• Exploring Principal/Staff Solutions Architect opportunities, with openness to Principal/Staff Engineering roles that value architecture leadership</li>
           </ul>
         </div>
 
       {/* Links */}
-      <div className="flex flex-wrap items-center gap-6 text-lg mt-12">
+      <div className="flex flex-wrap items-center gap-6 text-lg mt-6">
 
-        {/* Résumé Buttons */}
-        <a
-          href="/mikeeunderwood_software_engineer_resume.pdf"
-          target="_blank"
-          className="inline-flex items-center gap-2 rounded-md border border-blue-600 dark:border-blue-400 px-4 py-2 text-blue-600 dark:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-900/30 transition-colors"
-        >
-          Principal Software Engineer Résumé
-        </a>
-
-        <a
-          href="/mikeeunderwood_solutions_architect_resume.pdf"
-          target="_blank"
-          className="inline-flex items-center gap-2 rounded-md border border-blue-600 dark:border-blue-400 px-4 py-2 text-blue-600 dark:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-900/30 transition-colors"
-        >
-          Principal Solutions Architect Résumé
-        </a>
-
-        {/* Secondary Links */}
         <a
           href="https://github.com/mikeeunderwood-ship-it"
           target="_blank"

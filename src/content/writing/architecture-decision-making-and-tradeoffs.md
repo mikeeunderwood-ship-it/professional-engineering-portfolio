@@ -7,7 +7,7 @@ tags: ["architecture", "tradeoffs", "decision-making", "leadership"]
 
 # Architecture Decision-Making & Tradeoff Frameworks
 
-Architecture is fundamentally about making decisions — often with incomplete information, competing priorities, and real constraints. The best architects aren’t the ones who know every technology. They’re the ones who can **evaluate tradeoffs**, **communicate decisions clearly**, and **guide teams toward the right direction** with confidence.
+Architecture is fundamentally about making decisions, often with incomplete information, competing priorities, and real constraints. The best architects aren’t the ones who know every technology. They’re the ones who can **evaluate tradeoffs**, **communicate decisions clearly**, and **guide teams toward the right direction** with confidence.
 
 This write-up outlines the frameworks I use to make architectural decisions in complex, real-world environments.
 
@@ -153,7 +153,7 @@ Which option we chose and why.
 What we gain and what we give up.
 
 ### **Consequences**
-What this decision enables — and what it limits.
+What this decision enables and what it limits.
 
 ### **Next Steps**
 What needs to happen to implement the decision safely.
@@ -194,13 +194,13 @@ Here’s how I evaluate it:
 If the workflow requires immediate confirmation or user-facing feedback, I lean synchronous.  
 If the workflow is background, high-volume, or cross-domain, I lean asynchronous.
 
-The key is not the technology — it’s the **tradeoff clarity**.
+The key is not the technology, it’s the **tradeoff clarity**.
 
 ---
 
 # How I Communicate Decisions to Stakeholders
 
-Architects don’t just design systems — they guide people.
+Architects don’t just design systems, they guide people.
 
 When communicating decisions, I focus on:
 
@@ -214,7 +214,7 @@ Stakeholders trust you when you acknowledge what you’re giving up.
 How the decision affects delivery, operations, and future work.
 
 ### **Confidence**
-Not arrogance — clarity of reasoning.
+Not arrogance, clarity of reasoning.
 
 ### **Alignment**
 Ensuring product, engineering, and leadership understand the “why.”
@@ -268,7 +268,7 @@ It’s about:
 
 The best architects create clarity where others see complexity.
 
-They make decisions that stand the test of time — not because they’re perfect, but because they’re **intentional, transparent, and aligned with the business**.
+They make decisions that stand the test of time, not because they’re perfect, but because they’re **intentional, transparent, and aligned with the business**.
 
 ---
 
@@ -280,4 +280,4 @@ They determine how quickly teams can move, how safely systems operate, and how w
 Good architecture is not about being right.  
 It’s about being **clear**, **consistent**, and **deliberate**.
 
-A strong decision-making framework turns architecture from guesswork into strategy — and transforms teams into high-performing, aligned, and confident delivery organizations.
+A strong decision-making framework turns architecture from guesswork into strategy and transforms teams into high-performing, aligned, and confident delivery organizations.
