@@ -12,59 +12,141 @@ export default function Home() {
         </h1>
 
         {/* Subheadline */}
-        <h2 className="text-xl sm:text-2xl lg:text-3xl text-gray-600 dark:text-gray-400 mb-4">
-          Principal Solutions Architect & Staff-Level Engineering Leader
+        <h2 className="text-xl font-semibold lg:text-3xl text-gray-900 dark:text-gray-100 mb-3">
+          Principal Solutions Architect & Technology Leader
         </h2>
 
         {/* Summary */}
-        <p className="text-base sm:text-lg lg:text-xl leading-relaxed text-gray-800 dark:text-gray-200 mb-8">
-          Principal‑level Solutions Architect with deep engineering expertise, focused on designing, modernizing, 
-          and guiding complex distributed systems. Currently exploring Principal or Staff Solutions Architect 
-          roles where architectural leadership, system design, and cross‑team technical direction drive meaningful 
-          impact. Also open to Principal/Staff Engineering positions that value strong architecture ownership 
-          supported by hands‑on technical depth.
+        <p className="text-base sm:text-lg lg:text-xl leading-relaxed text-gray-800 dark:text-gray-200 mb-3">
+          Principal Solutions Architect and technology leader with 35+ years of experience designing, modernizing, 
+          and delivering enterprise technology solutions across complex, distributed environments.
         </p>
 
-        {/* Top Skills Row */}
-        <div className="flex flex-wrap gap-3 mb-4">
-          {[
-            "Distributed Systems",
-            "System Design",
-            "Cloud‑Native Engineering",
-            "Event‑Driven Design",
-            "API Architecture",
-            "Cloud-Native Architecture",
-            "Azure",
-            "AWS Lambda (Serverless)",
-            "Modernization & Legacy Transformation",
-            "Reliability & Performance Engineering"
-          ].map((skill) => (
-            <span
-              key={skill}
-              className="px-4 py-2 bg-gray-200 dark:bg-gray-800 rounded-full text-sm font-medium text-gray-900 dark:text-gray-200"
-            >
-              {skill}
-            </span>
-          ))}
-        </div>
+        <p className="text-base sm:text-lg lg:text-xl leading-relaxed text-gray-800 dark:text-gray-200 mb-3">
+          I specialize in enterprise architecture, application modernization, cloud adoption, API and integration 
+          architecture, distributed systems, and technology strategy, combining strategic architecture leadership 
+          with deep technical experience to turn business objectives into scalable, practical solutions.
+        </p>
 
-        {/* Current Focus */}
+        <p className="text-base sm:text-lg lg:text-xl leading-relaxed text-gray-800 dark:text-gray-200 mb-3">
+          My career spans financial services, insurance, healthcare, retail, entertainment, and digital commerce, 
+          including 18 years at Fiserv architecting high-volume payment, billing, and money-movement platforms 
+          serving thousands of financial institutions.
+        </p>
+
+        {/* Areas of Expertise */}
+        <h2 className="text-xl font-semibold lg:text-3xl text-gray-900 dark:text-gray-100 mb-3">
+          Areas of Expertise
+        </h2>
+
         <div className="mt-0">
-          <h3 className="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
-            Current Focus
+          <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-0">
+            Enterprise Architecture
           </h3>
 
-          <p className="text-lg text-gray-800 dark:text-gray-200 mb-2">
-            What I’m actively sharpening and driving right now:
+          <p className="text-lg text-gray-800 dark:text-gray-200 mb-3">
+            Enterprise &Solutions Architecture • Technology Strategy • Architecture Roadmaps • Modernization Strategy
+          </p>
+        </div>
+
+        <div className="mt-0">
+          <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-0">
+            Cloud & Modernization
+          </h3>
+
+          <p className="text-lg text-gray-800 dark:text-gray-200 mb-3">
+            Microsoft Azure • AWS • Kubernetes • Docker • Cloud-Native Architecture • CI/CD
+          </p>
+        </div>
+
+        <div className="mt-0">
+          <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-0">
+            Integration & Distributed Systems
+          </h3>
+
+          <p className="text-lg text-gray-800 dark:text-gray-200 mb-3">
+            API Architecture • REST APIs • Microservices • Event-Driven Architecture • Distributed Systems • Integration Patterns
+          </p>
+        </div>
+
+        <div className="mt-0">
+          <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-0">
+            Reliability & Technical Leadership
+          </h3>
+
+          <p className="text-lg text-gray-800 dark:text-gray-200 mb-3">
+            Reliability & Resilience • Performance Optimization • Architecture Governance • Stakeholder Alignment • Engineering Leadership • Technical Mentoring
+          </p>
+        </div>
+
+        {/* <div className="mt-0">
+          <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-0">
+            Emerging AI Architecture
+          </h3>
+
+          <p className="text-lg text-gray-800 dark:text-gray-200 mb-3">
+            Generative AI • RAG • Agentic AI • AI Application Architecture • AI Integration
+          </p>
+        </div> */}
+
+        {/* Selected Experience */}
+        <h2 className="text-xl font-semibold lg:text-3xl text-gray-900 dark:text-gray-100 mb-3">
+          Selected Experience
+        </h2>
+
+        <div className="mt-0">
+          <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-0">
+            Rightpoint — Solutions Architect
+          </h3>
+
+          <p className="text-lg text-gray-800 dark:text-gray-200 mb-3">
+            Led technology architecture and technical delivery for enterprise clients across healthcare, financial 
+            services, entertainment, retail, and ecommerce, with a focus on digital transformation, cloud adoption, 
+            application modernization, and integration architecture.
+          </p>
+        </div>
+
+        <div className="mt-0">
+          <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-0">
+            AXIS Capital — Application Delivery Lead, Enterprise Architecture
+          </h3>
+
+          <p className="text-lg text-gray-800 dark:text-gray-200 mb-3">
+            Provided architectural leadership for enterprise initiatives, translating business requirements into 
+            application and integration architectures while guiding distributed teams through modernization and 
+            delivery.
+          </p>
+        </div>
+
+        <div className="mt-0">
+          <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-0">
+            Fiserv — Principal Solutions Architect & Architecture Leadership
+          </h3>
+
+          <p className="text-lg text-gray-800 dark:text-gray-200 mb-3">
+            18-year progression through software engineering, architecture, and technology leadership roles 
+            supporting high-volume payment, billing, and money-movement platforms. Led modernization initiatives, 
+            technology roadmaps, distributed systems architecture, and API strategy serving thousands of financial institutions.
+          </p>
+        </div>
+
+        {/* What I Bring */}
+        <h2 className="text-xl font-semibold lg:text-3xl text-gray-900 dark:text-gray-100 mb-3">
+          What I Bring
+        </h2>
+
+        <div className="mt-0">
+          <p className="text-lg text-gray-800 dark:text-gray-200 mb-3">
+            I bridge the gap between <strong>business strategy, enterprise architecture, and engineering execution</strong>. My approach 
+            combines architectural vision with practical implementation experience—helping organizations modernize legacy 
+            platforms, adopt cloud-native technologies, improve reliability and performance, and establish sustainable 
+            technology direction.
           </p>
 
-          <ul className="space-y-0 text-gray-700 dark:text-gray-300">
-            <li>• Deepening my Principal‑level architecture practice across distributed systems, integration patterns, and event‑driven workflows</li>
-            <li>• Driving modernization across API design, cloud‑native systems, and high‑volume platforms</li>
-            <li>• Re‑engaging hands‑on engineering in .NET, C#, TypeScript, and modern web stacks to sharpen architectural decision‑making</li>
-            <li>• Producing polished, production‑grade architectural assets that demonstrate senior‑level clarity and system‑wide reasoning</li>
-            <li>• Exploring Principal/Staff Solutions Architect opportunities, with openness to Principal/Staff Engineering roles that value architecture leadership</li>
-          </ul>
+          <p className="text-lg text-gray-800 dark:text-gray-200 mb-3">
+            <strong>Professional Focus</strong>: Principal and Senior Solutions Architecture, Enterprise Architecture, and 
+            technology leadership for organizations undergoing modernization and digital transformation.
+          </p>
         </div>
 
       {/* Links */}

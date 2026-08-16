@@ -2,7 +2,8 @@ import fm from "front-matter";
 import { marked } from "marked";
 
 const files = import.meta.glob("../content/writing/*.md", {
-  as: "raw",
+  query: "?raw",
+  import: "default",
   eager: true,
 });
 
