@@ -45,7 +45,7 @@ export default function Home() {
           </h3>
 
           <p className="text-lg text-gray-800 dark:text-gray-200 mb-3">
-            Enterprise &Solutions Architecture • Technology Strategy • Architecture Roadmaps • Modernization Strategy
+            Enterprise & Solutions Architecture • Technology Strategy • Architecture Roadmaps • Modernization Strategy
           </p>
         </div>
 
