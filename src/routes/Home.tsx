@@ -13,25 +13,30 @@ export default function Home() {
 
         {/* Subheadline */}
         <h2 className="text-xl font-semibold lg:text-3xl text-gray-900 dark:text-gray-100 mb-3">
-          Principal Solutions Architect & Technology Leader
+          Technology Leader | Transformation • Architecture • Consulting
         </h2>
 
         {/* Summary */}
-        <p className="text-base sm:text-lg lg:text-xl leading-relaxed text-gray-800 dark:text-gray-200 mb-3">
-          Principal Solutions Architect and technology leader with 35+ years of experience designing, modernizing, 
-          and delivering enterprise technology solutions across complex, distributed environments.
+        <p className="text-base sm:text-lg lg:text-xl leading-relaxed text-gray-800 dark:text-gray-200 mb-6">
+          Technology transformation and consulting leader with 35+ years of
+          experience helping complex organizations modernize applications,
+          adopt cloud technologies, integrate enterprise systems, and improve
+          technology delivery.
         </p>
 
-        <p className="text-base sm:text-lg lg:text-xl leading-relaxed text-gray-800 dark:text-gray-200 mb-3">
-          I specialize in enterprise architecture, application modernization, cloud adoption, API and integration 
-          architecture, distributed systems, and technology strategy, combining strategic architecture leadership 
-          with deep technical experience to turn business objectives into scalable, practical solutions.
+        <p className="text-base sm:text-lg lg:text-xl leading-relaxed text-gray-800 dark:text-gray-200 mb-6">
+          I combine deep software engineering and architecture expertise with
+          technology strategy, client consulting, technical leadership,
+          stakeholder alignment, and hands-on implementation experience to
+          translate business objectives into practical technology solutions.
         </p>
 
-        <p className="text-base sm:text-lg lg:text-xl leading-relaxed text-gray-800 dark:text-gray-200 mb-3">
-          My career spans financial services, insurance, healthcare, retail, entertainment, and digital commerce, 
-          including 18 years at Fiserv architecting high-volume payment, billing, and money-movement platforms 
-          serving thousands of financial institutions.
+        <p className="text-base sm:text-lg lg:text-xl leading-relaxed text-gray-800 dark:text-gray-200 mb-6">
+          My career spans financial services, insurance, healthcare, retail,
+          entertainment, and digital commerce, including 18 years at Fiserv
+          leading technology modernization and engineering initiatives for
+          high-volume payment, billing, and money-movement platforms serving
+          thousands of financial institutions.
         </p>
 
         {/* Areas of Expertise */}
@@ -41,53 +46,51 @@ export default function Home() {
 
         <div className="mt-0">
           <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-0">
-            Enterprise Architecture
+            Technology Transformation & Strategy
           </h3>
 
-          <p className="text-lg text-gray-800 dark:text-gray-200 mb-3">
-            Enterprise & Solutions Architecture • Technology Strategy • Architecture Roadmaps • Modernization Strategy
+          <p className="text-lg text-gray-800 dark:text-gray-200 mb-5">
+            Technology Transformation • Digital Transformation • Technology
+            Strategy • Architecture Roadmaps • Application Modernization •
+            Business-to-Technology Translation
           </p>
         </div>
 
         <div className="mt-0">
           <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-0">
-            Cloud & Modernization
+            Architecture & Modernization
           </h3>
 
-          <p className="text-lg text-gray-800 dark:text-gray-200 mb-3">
-            Microsoft Azure • AWS • Kubernetes • Docker • Cloud-Native Architecture • CI/CD
+          <p className="text-lg text-gray-800 dark:text-gray-200 mb-5">
+            Enterprise Architecture • Solutions Architecture • Cloud
+            Architecture • Cloud Adoption & Modernization • Distributed Systems
+            • Microservices
           </p>
         </div>
 
         <div className="mt-0">
           <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-0">
-            Integration & Distributed Systems
+            Consulting & Technical Delivery
           </h3>
 
-          <p className="text-lg text-gray-800 dark:text-gray-200 mb-3">
-            API Architecture • REST APIs • Microservices • Event-Driven Architecture • Distributed Systems • Integration Patterns
+          <p className="text-lg text-gray-800 dark:text-gray-200 mb-5">
+            Client & Stakeholder Consulting • Implementation & Technical
+            Delivery • API & Integration Architecture • Integration Patterns •
+            Technical Problem Solving
           </p>
         </div>
 
         <div className="mt-0">
           <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-0">
-            Reliability & Technical Leadership
+            Technical Leadership
           </h3>
 
-          <p className="text-lg text-gray-800 dark:text-gray-200 mb-3">
-            Reliability & Resilience • Performance Optimization • Architecture Governance • Stakeholder Alignment • Engineering Leadership • Technical Mentoring
+          <p className="text-lg text-gray-800 dark:text-gray-200 mb-5">
+            Technical Leadership • Engineering Leadership • Team Mentoring •
+            Architecture Governance • Reliability & Resilience • Performance
+            Optimization
           </p>
         </div>
-
-        {/* <div className="mt-0">
-          <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-0">
-            Emerging AI Architecture
-          </h3>
-
-          <p className="text-lg text-gray-800 dark:text-gray-200 mb-3">
-            Generative AI • RAG • Agentic AI • AI Application Architecture • AI Integration
-          </p>
-        </div> */}
 
         {/* Selected Experience */}
         <h2 className="text-xl font-semibold lg:text-3xl text-gray-900 dark:text-gray-100 mb-3">
@@ -99,10 +102,13 @@ export default function Home() {
             Rightpoint — Solutions Architect
           </h3>
 
-          <p className="text-lg text-gray-800 dark:text-gray-200 mb-3">
-            Led technology architecture and technical delivery for enterprise clients across healthcare, financial 
-            services, entertainment, retail, and ecommerce, with a focus on digital transformation, cloud adoption, 
-            application modernization, and integration architecture.
+          <p className="text-lg text-gray-800 dark:text-gray-200 mb-5">
+            Consulted with enterprise clients across healthcare, financial
+            services, entertainment, retail, and ecommerce on digital
+            transformation, application modernization, cloud adoption, and
+            integration initiatives. Partnered with business and technology
+            stakeholders to translate objectives into practical technology
+            solutions and delivery plans.
           </p>
         </div>
 
@@ -111,22 +117,26 @@ export default function Home() {
             AXIS Capital — Application Delivery Lead, Enterprise Architecture
           </h3>
 
-          <p className="text-lg text-gray-800 dark:text-gray-200 mb-3">
-            Provided architectural leadership for enterprise initiatives, translating business requirements into 
-            application and integration architectures while guiding distributed teams through modernization and 
-            delivery.
+          <p className="text-lg text-gray-800 dark:text-gray-200 mb-5">
+            Led enterprise technology delivery and application modernization
+            initiatives, translating business requirements into application and
+            integration solutions while coordinating distributed teams and
+            strengthening development and delivery practices.
           </p>
         </div>
 
         <div className="mt-0">
           <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-0">
-            Fiserv — Principal Solutions Architect & Architecture Leadership
+            Fiserv — Technology Architecture & Engineering Leadership
           </h3>
 
-          <p className="text-lg text-gray-800 dark:text-gray-200 mb-3">
-            18-year progression through software engineering, architecture, and technology leadership roles 
-            supporting high-volume payment, billing, and money-movement platforms. Led modernization initiatives, 
-            technology roadmaps, distributed systems architecture, and API strategy serving thousands of financial institutions.
+          <p className="text-lg text-gray-800 dark:text-gray-200 mb-5">
+            Progressed through software engineering, architecture, and
+            technology leadership roles over 18 years. Led technology
+            modernization initiatives, established business and technology
+            roadmaps, managed architecture teams, and modernized high-volume
+            payment, billing, and money-movement platforms serving thousands of
+            financial institutions.
           </p>
         </div>
 
@@ -136,39 +146,46 @@ export default function Home() {
         </h2>
 
         <div className="mt-0">
-          <p className="text-lg text-gray-800 dark:text-gray-200 mb-3">
-            I bridge the gap between <strong>business strategy, enterprise architecture, and engineering execution</strong>. My approach 
-            combines architectural vision with practical implementation experience—helping organizations modernize legacy 
-            platforms, adopt cloud-native technologies, improve reliability and performance, and establish sustainable 
-            technology direction.
+          <p className="text-lg text-gray-800 dark:text-gray-200 mb-6">
+            I bridge the gap between{" "}
+            <strong>
+              business strategy, technology transformation, architecture, and
+              engineering execution
+            </strong>
+            . My approach combines strategic thinking with practical
+            implementation experience—helping organizations modernize legacy
+            platforms, adopt cloud-native technologies, improve reliability and
+            performance, and establish sustainable technology direction.
           </p>
 
-          <p className="text-lg text-gray-800 dark:text-gray-200 mb-3">
-            <strong>Professional Focus</strong>: Principal and Senior Solutions Architecture, Enterprise Architecture, and 
-            technology leadership for organizations undergoing modernization and digital transformation.
+          <p className="text-lg text-gray-800 dark:text-gray-200 mb-6">
+            <strong>Professional Focus</strong>: Technology transformation,
+            technical consulting, implementation and delivery, enterprise and
+            solutions architecture, and technical leadership for organizations
+            undergoing modernization and digital transformation.
           </p>
         </div>
 
-      {/* Links */}
-      <div className="flex flex-wrap items-center gap-6 text-lg mt-6">
+        {/* Links */}
+        <div className="flex flex-wrap items-center gap-6 text-lg mt-6">
+          <a
+            href="https://github.com/mikeeunderwood-ship-it"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 dark:text-blue-400 hover:underline"
+          >
+            GitHub
+          </a>
 
-        <a
-          href="https://github.com/mikeeunderwood-ship-it"
-          target="_blank"
-          className="text-blue-600 dark:text-blue-400 hover:underline"
-        >
-          GitHub
-        </a>
-
-        <a
-          href="https://www.linkedin.com/in/mike-e-underwood-9251b64"
-          target="_blank"
-          className="text-blue-600 dark:text-blue-400 hover:underline"
-        >
-          LinkedIn
-        </a>
-      </div>
-
+          <a
+            href="https://www.linkedin.com/in/mike-e-underwood-9251b64"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 dark:text-blue-400 hover:underline"
+          >
+            LinkedIn
+          </a>
+        </div>
       </div>
     </section>
   );

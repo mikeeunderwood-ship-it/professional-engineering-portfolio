@@ -3,9 +3,9 @@ import Breadcrumb from "../components/Breadcrumb";
 export default function Writing() {
   const sections = [
     {
-      title: "Architecture Leadership & Decision-Making",
+      title: "Technology Leadership & Decision-Making",
       description:
-        "How I approach architectural decisions, stakeholder alignment, governance, discovery, and technical leadership across organizations.",
+        "How I approach technology decisions, stakeholder alignment, governance, discovery, and technical leadership across complex organizations.",
       posts: [
         {
           title: "Architecture Decision-Making & Tradeoff Frameworks",
@@ -93,7 +93,7 @@ export default function Writing() {
     {
       title: "Modernization & Legacy Transformation",
       description:
-        "Approaches for modernizing legacy platforms while managing technical risk, business priorities, and long-term architectural direction.",
+        "Approaches for modernizing legacy platforms while managing technical risk, business priorities, implementation challenges, and long-term architectural direction.",
       posts: [
         {
           title: "Modernizing Legacy Platforms",
@@ -112,7 +112,7 @@ export default function Writing() {
     {
       title: "Reliability, Performance & Operations",
       description:
-        "Architectural approaches for building reliable systems, diagnosing complex distributed failures, and improving performance and operational resilience.",
+        "Architectural and engineering approaches for building reliable systems, diagnosing complex distributed failures, and improving performance and operational resilience.",
       posts: [
         {
           title: "Architecting for Reliability: Patterns for High-Volume Systems",
@@ -148,20 +148,24 @@ export default function Writing() {
       <div className="container mx-auto max-w-5xl">
         <Breadcrumb />
 
-        <h1 className="text-4xl font-bold mb-6">Writing</h1>
+        <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-gray-900 dark:text-gray-100">
+          Writing
+        </h1>
 
-        <p className="max-w-5xl text-lg leading-relaxed mb-5 text-gray-700 dark:text-gray-300">
-          Architecture thinking, patterns, and decision frameworks developed
-          through more than 35 years of software engineering and architecture.
+        <p className="max-w-5xl text-lg leading-relaxed mb-6 text-gray-700 dark:text-gray-300">
+          I write about technology transformation, architecture, modernization,
+          technical leadership, and the practical challenges of turning
+          business objectives into effective technology solutions.
         </p>
 
         <p className="max-w-5xl text-lg leading-relaxed mb-8 text-gray-700 dark:text-gray-300">
-          I write about enterprise architecture, distributed systems,
-          modernization, cloud architecture, integration, reliability, and
-          technical leadership. The focus is on architectural reasoning rather
-          than tutorials—the tradeoffs, patterns, system behavior, and
-          decision-making involved in designing, modernizing, and guiding
-          complex technology platforms.
+          My writing explores how technology leaders evaluate tradeoffs, align
+          stakeholders, establish technical direction, modernize complex
+          platforms, and guide organizations from strategy and architecture
+          through implementation and delivery. The focus is on practical
+          reasoning rather than tutorials—the decisions, patterns, tradeoffs,
+          and system behaviors involved in solving complex technology
+          challenges.
         </p>
 
         <div className="mb-10">
@@ -180,7 +184,7 @@ export default function Writing() {
         <div className="space-y-8">
           {sections.map((section) => (
             <section key={section.title}>
-              <h2 className="text-3xl font-bold mb-2">
+              <h2 className="text-3xl font-bold mb-2 text-gray-900 dark:text-gray-100">
                 {section.title}
               </h2>
 

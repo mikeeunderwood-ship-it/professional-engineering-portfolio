@@ -38,6 +38,7 @@ export default function Header() {
         <div className="hidden md:flex flex-1 justify-center gap-6 text-lg font-medium">
           <NavLink to="/" className={({ isActive }) => (isActive ? active : base)}>Home</NavLink>
           <NavLink to="/about" className={({ isActive }) => (isActive ? active : base)}>About</NavLink>
+          <NavLink to="/resumes" className={({ isActive }) => (isActive ? active : base)}>Resumes</NavLink>
           <NavLink to="/writing" className={({ isActive }) => (isActive ? active : base)}>Writing</NavLink>
           {/* <NavLink to="/projects" className={({ isActive }) => (isActive ? active : base)}>Projects</NavLink> */}
         </div>
@@ -45,7 +46,7 @@ export default function Header() {
         {/* RIGHT — Actions */}
         <div className="flex items-center gap-4">
 
-          {/* Resume Button */}
+          {/* Resume Button 
           <a
             href="/mikeeunderwood_resume.pdf"
             target="_blank"
@@ -57,6 +58,7 @@ export default function Header() {
             </svg>
             Resume
           </a>
+          */}
 
           <DarkModeToggle />
 
